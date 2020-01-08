@@ -1,0 +1,7 @@
+Credentials cache: API:65970
+        Principal: dyusuf@42.US.ORG
+
+  Issued                Expires               Principal
+Jan  6 18:20:10 2020  Jan  7 04:20:10 2020  krbtgt/42.US.ORG@42.US.ORG
+Jan  6 18:20:11 2020  Jan  7 04:20:10 2020  ldap/ldap-master.42.us.org@42.US.ORG
+Jan  6 19:17:52 2020  Jan  7 04:20:10 2020  host/vgs-fn1.42.us.org@42.US.ORG
