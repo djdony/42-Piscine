@@ -2,7 +2,7 @@
 //void ft_print_reverse_alphabet(void);
 //void ft_print_numbers(void);
 //void ft_is_negative(int);
-void ft_print_comb(int);
+void ft_print_comb(void);
 
 int             main(void)
 {
