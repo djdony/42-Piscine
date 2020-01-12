@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:44:44 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/11 18:58:40 by dyusuf           ###   ########.fr       */
+/*   Created: 2020/01/11 18:59:17 by dyusuf            #+#    #+#             */
+/*   Updated: 2020/01/11 20:46:57 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+int	ft_sqrt(int nb)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
+	int	i;
+
+	i = 1;
+	if (nb <= 0)
 		return (0);
-	else if (index == 1)
-		return (1);
+	while (i < nb / i)
+		i++;
+	if (i * i == nb)
+		return (i);
 	else
-		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+		return (0);
 }
