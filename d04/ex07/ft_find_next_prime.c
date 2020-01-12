@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/11 19:58:47 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/11 20:34:32 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/11 21:50:07 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,9 @@ int	ft_find_next_prime(int nb)
 	if (nb < 2)
 		return (2);
 	while (1)
+	{
 		if (ft_is_prime(nb))
-			return (5);
+			return (nb);
+		nb++;
+	}
 }

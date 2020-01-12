@@ -11,7 +11,7 @@ int ft_find_next_prime(int nb) ;
 
 int	main()
 {
-	int nb =6;
+	int nb =13;
 //	int pw =2;
 	printf("Result of %d : %d", nb, ft_find_next_prime(nb));
 //	printf("Result of %d : %d", nb, ft_sqrt(nb));
