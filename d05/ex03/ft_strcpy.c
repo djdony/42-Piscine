@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/13 19:02:20 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/13 19:02:32 by dyusuf           ###   ########.fr       */
+/*   Created: 2020/01/13 19:03:03 by dyusuf            #+#    #+#             */
+/*   Updated: 2020/01/13 20:00:07 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_putnbr(int nb)
+char *ft_strcpy(char *dest, char *src)
 {
-	if (nb < 0)
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
-		ft_putchar('-');
-		if (nb == -2147483648)
-		{
-			ft_putchar('2');
-			ft_putnbr(147483648);
-			return ;
-		}
-		nb = -nb;
+		dest[i] = src[i];
+		i++;
 	}
-	if (nb > 9)
-		ft_putnbr(nb / 10);
-	ft_putchar(nb % 10 + '0');
+	dest[i] = '\0';
+	return (dest);
 }
