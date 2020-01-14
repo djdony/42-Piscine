@@ -6,20 +6,22 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/13 19:03:03 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/13 20:00:07 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/13 20:28:35 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-	int i;
+	char	*temp;
+	int		i;
 
 	i = 0;
+	temp = dest;
 	while (src[i] != '\0')
 	{
-		dest[i] = src[i];
+		temp[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	temp[i] = '\0';
+	return (temp);
 }
