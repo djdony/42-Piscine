@@ -10,16 +10,16 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 
 int		main(void)
 {
-//	char str1[] = "   -+42He55llo";
-	char src[] = "Hello World";
-	char dest[] = "Bye";
+	char str1[] = "   -42He55llo";
+//	char src[] = "Hello World";
+//	char dest[] = "Bye";
 //	ft_putstr(str1);
 //    ft_putnbr(-2147483648);
-//    int a = ft_atoi(str1);
+    printf("%d", ft_atoi(str1));
 //	printf ("%d", a);
 //	char a[] = ft_strcpy(dest, src);
 //	printf("%s", ft_strcpy(dest,src));
-	printf("%s", ft_strncpy(dest, src, 4));
+//	printf("%s", ft_strncpy(dest, src, 4));
 //	printf("\n%s", strncpy(dest, src, 4));
 	return (0);
 }
