@@ -11,6 +11,7 @@ char 	*ft_strstr(char *str, char *to_find);
 int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 char 	*ft_strupcase(char *str);
+char 	*ft_strlowcase(char *str);
 
 
 int		main(void)
@@ -26,6 +27,6 @@ int		main(void)
 //	printf("%s", ft_strncpy(dest, src, 4));
 //	printf("\n%s", ft_strstr(src, a));
 //	printf("\n%d", ft_strncmp(src, a, 8));
-	printf("\n%s", ft_strupcase(a));
+	printf("\n%s", ft_strlowcase(a));
 	return (0);
 }
