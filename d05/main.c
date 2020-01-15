@@ -12,13 +12,17 @@ int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 char 	*ft_strupcase(char *str);
 char 	*ft_strlowcase(char *str);
-char *ft_strcapitalize(char *str);
+char 	*ft_strcapitalize(char *str);
+int		ft_str_is_alpha(char *str);
+int		ft_str_is_numeric(char *str);
+int		ft_str_is_lowercase(char *str);
+int		ft_str_is_uppercase(char *str);
 
 int		main(void)
 {
 //	char str1[] = " ";
-//	char src[] = "Helbb";
-	char a[] = "Hello world TrYY, test? 42mots; garant-deux; cing+ttt+ccc";
+//	char src[] = "012";
+//	char a[] = "Hello world TrYY, test? 42mots; garant-deux; cing+ttt+ccc";
 //	ft_putstr(str1);
 //    ft_putnbr(-2147483648);
 //    printf("%d", ft_atoi(str1));
@@ -27,6 +31,7 @@ int		main(void)
 //	printf("%s", ft_strncpy(dest, src, 4));
 //	printf("\n%s", ft_strstr(src, a));
 //	printf("\n%d", ft_strncmp(src, a, 8));
-	printf("\n%s", ft_strcapitalize(a));
+//	printf("\n%s", ft_strcapitalize(a));
+	printf("\n%d", ft_str_is_uppercase("HELL"));
 	return (0);
 }
