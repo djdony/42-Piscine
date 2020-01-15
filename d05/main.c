@@ -7,23 +7,25 @@ void	ft_putnbr(int nb);
 int		ft_atoi(char *str);
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
-char *ft_strstr(char *str, char *to_find);
+char 	*ft_strstr(char *str, char *to_find);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
+char 	*ft_strupcase(char *str);
+
 
 int		main(void)
 {
 //	char str1[] = " ";
-	char src[] = "Hello World Tommorow";
-//	char dest[] = "Bye";
-	char a[] = "Wol";
+//	char src[] = "Helbb";
+	char a[] = "Hel";
 //	ft_putstr(str1);
 //    ft_putnbr(-2147483648);
 //    printf("%d", ft_atoi(str1));
-//	printf ("%d", a);
 //	char a[] = ft_strcpy(dest, src);
 //	printf("%s", ft_strcpy(dest,src));
 //	printf("%s", ft_strncpy(dest, src, 4));
-//	printf("\n%s", strncpy(dest, src, 4));
-	printf("\n%s", ft_strstr(src, a));
-	printf("\n%s", strstr(src, a));
+//	printf("\n%s", ft_strstr(src, a));
+//	printf("\n%d", ft_strncmp(src, a, 8));
+	printf("\n%s", ft_strupcase(a));
 	return (0);
 }
