@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/13 20:45:20 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/14 22:25:57 by dyusuf           ###   ########.fr       */
+/*   Created: 2020/01/14 23:36:03 by dyusuf            #+#    #+#             */
+/*   Updated: 2020/01/14 23:37:20 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strcat(char *dest, char *src)
 {
-	char			*tmp;
-	unsigned int	i;
+	int i;
+	int j;
 
 	i = 0;
-	tmp = dest;
-	while (i < n && src[i] != '\0')
-	{
-		tmp[i] = src[i];
+	j = 0;
+	while (dest[i])
 		i++;
-	}
-	while (i < n)
+	while (src[j])
 	{
-		tmp[i] = '\0';
-		i++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	return (tmp);
+	dest[i + j] = '\0';
+	return (dest);
 }

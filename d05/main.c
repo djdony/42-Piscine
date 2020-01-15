@@ -17,21 +17,27 @@ int		ft_str_is_alpha(char *str);
 int		ft_str_is_numeric(char *str);
 int		ft_str_is_lowercase(char *str);
 int		ft_str_is_uppercase(char *str);
+char *ft_strcat(char *dest, char *src);
 
 int		main(void)
 {
-//	char str1[] = " ";
-//	char src[] = "012";
+//	unsigned int test = 2;
+	char dest[] = "iissss";
+	//	char str1[] = " ";
+	char src[] = "012";
 //	char a[] = "Hello world TrYY, test? 42mots; garant-deux; cing+ttt+ccc";
 //	ft_putstr(str1);
 //    ft_putnbr(-2147483648);
 //    printf("%d", ft_atoi(str1));
 //	char a[] = ft_strcpy(dest, src);
 //	printf("%s", ft_strcpy(dest,src));
-//	printf("%s", ft_strncpy(dest, src, 4));
+//	fit_strncpy(dest, "WORLD", 10);
+//	printf("%s\n", ft_strncpy(dest, "WORLDii", 2));
+//	printf("%s\n", strncpy(dest, "WORLDii", 2));
 //	printf("\n%s", ft_strstr(src, a));
 //	printf("\n%d", ft_strncmp(src, a, 8));
 //	printf("\n%s", ft_strcapitalize(a));
-	printf("\n%d", ft_str_is_uppercase("HELL"));
+//	printf("\n%d", ft_str_is_uppercase("HELL"));
+	printf("\n%s", ft_strcat(dest, src));
 	return (0);
 }
