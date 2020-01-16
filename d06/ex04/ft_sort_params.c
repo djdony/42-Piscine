@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 17:56:58 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/15 18:23:10 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/15 23:32:17 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,6 @@ int		main(int argc, char **argv)
 	}
 	i = 1;
 	while (i < argc)
-		ft_print_param(argv[i++]);
+		ft_print_params(argv[i++]);
 	return (0);
 }
