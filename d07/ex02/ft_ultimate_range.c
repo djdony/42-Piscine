@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/16 17:53:58 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/16 21:34:25 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/18 13:45:39 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	int *arr;
 
 	i = 0;
-	arr = (int*)malloc(sizeof(int) * (max - min));
+	arr = (int*)malloc(sizeof(**range) * (max - min));
 	while (min < max)
 	{
 		arr[i] = min;

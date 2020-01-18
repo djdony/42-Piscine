@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/17 22:49:23 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/17 22:53:02 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/18 13:51:11 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # define FT_BOOLEAN_H
 # define TRUE 1
 # define FALSE 0
-# define EVEN(x) (x % 2)
+# define EVEN(x) x % 2 == 0
 # define EVEN_MSG "I have an even number of arguments.\n"
 # define ODD_MSG "I have an odd number of arguments.\n"
 # define SUCCESS 0

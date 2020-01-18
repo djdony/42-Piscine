@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 23:05:44 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/16 15:23:01 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/18 13:38:23 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ char	*ft_strdup(char *src)
 	while (src[i] != '\0')
 		i++;
 	string = (char *)malloc(sizeof(char) * (i + 1));
-	if (string == NULL)
-		return (NULL);
 	i = 0;
 	while (src[i] != '\0')
 	{
