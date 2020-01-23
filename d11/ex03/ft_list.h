@@ -6,7 +6,7 @@
 /*   By: dyusuf <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 18:24:18 by dyusuf            #+#    #+#             */
-/*   Updated: 2020/01/22 19:19:38 by dyusuf           ###   ########.fr       */
+/*   Updated: 2020/01/22 22:43:39 by dyusuf           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-t_list			*ft_create_elem(void *data);
+t_list				*ft_create_elem(void *data);
 
 #endif
